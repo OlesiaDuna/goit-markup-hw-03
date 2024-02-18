@@ -30,7 +30,7 @@ img {
      margin-bottom: 32px;
 }
 .container {
-    max-width: 1158px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -153,7 +153,7 @@ color: #fff;
 .team-section-list {
     display: flex;
     gap: 24px;
-    width: calc((100%-4*3)/4);
+    width: calc((100%-40px*3)/4);
 }
 .hidden-title {
     position: absolute;
@@ -169,13 +169,20 @@ color: #fff;
 }
 .benefits-list {
     display: flex;
-    gap: 24px;
-    width: calc((100%-3*24)/4);
+    gap: 24px;  
+}
+.benefits-item {
+    width: calc((100%-3*24px)/4);
+}
+.name-job {
+    padding: 32px 0;
 }
 .team-section {
     background-color: #F4F4FD;
 }
 .team-list {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
 }
 .benefits-title {
@@ -209,16 +216,16 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
-margin-bottom: 32px;
 color: #434455;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 .portfolio-items {
-    width: calc((100%-24*2)/3);
+    width: calc((100%-24px*2)/3);
 }
 .portfolio-titles {
     font-weight: 500;
@@ -232,8 +239,12 @@ color: #2e2f42;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-margin-bottom: 32px;
 color: #434455;
+}
+.application-name {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .first-section {
