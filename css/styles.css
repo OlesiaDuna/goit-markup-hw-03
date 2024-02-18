@@ -17,6 +17,44 @@ a {
 ul, ol {
     text-decoration: none;
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+img {
+    display: block;
+     max-width: 100%;
+     height: auto;
+     margin-bottom: 32px;
+}
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.page-header {
+    display: flex;
+    border-bottom: 1px solid #e7e9fc;
+
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.address-contact {
+display: flex;
+gap: 40px;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -25,16 +63,20 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
     color: #4d5ae5;
   }
 .logo span {
     color: #2e2f42;
 }
 .nav-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #2e2f42;
 }
 .nav-link:hover,
@@ -43,8 +85,11 @@ ul, ol {
 }
 .address {
 font-style: normal;
+align-items: center;
+margin-left: auto;
 }
 .address-link {
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -60,18 +105,38 @@ font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
+max-width: 496px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 48px;
 color: #fff;
 }
 .title-btn {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
+margin: 0 auto;
+gap: 10px;
 color: #fff;
 }
 .title-btn:hover,
 .title-btn:focus {
    background-color: #404BBF; 
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .section-title {
     font-weight: 700;
@@ -80,7 +145,32 @@ color: #fff;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
     color: #2e2f42;
+}
+.team-section-list {
+    display: flex;
+    gap: 24px;
+    width: calc((100%-4*3)/4);
+}
+.hidden-title {
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.benefits-list {
+    display: flex;
+    gap: 24px;
+    width: calc((100%-3*24)/4);
 }
 .team-section {
     background-color: #F4F4FD;
@@ -96,6 +186,7 @@ color: #fff;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 color: #2e2f42;
 }
 .benefits-info {
@@ -110,6 +201,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
+margin-bottom: 8px;
 color: #2e2f42;
 }
 .team-person-job {
@@ -117,27 +209,42 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
+margin-bottom: 32px;
 color: #434455;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.portfolio-items {
+    width: calc((100%-24*2)/3);
 }
 .portfolio-titles {
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 color: #2e2f42;
 }
 .portfolio-info {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 32px;
 color: #434455;
 }
 
 .first-section {
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px; 
 }
 .whole-footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .logo .footer-logo {
     color: #f4f4fd
@@ -146,5 +253,10 @@ color: #434455;
         font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
     color: #f4f4fd;
+}
+.whole-footer .logo {
+    margin-bottom: 16px;
+    display: inline-block;
 }
